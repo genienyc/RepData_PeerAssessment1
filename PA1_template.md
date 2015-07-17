@@ -7,8 +7,8 @@ interval: Identifier for the 5-minute interval in which measurement was taken
   
 The dataset is stored in a comma-separated-value (CSV) file and there are a total of 17,568 observations in this dataset.  
   
-## Loading and preprocessing the data  
-1.  Load the data  
+## Loading and preprocessing the data
+1. Load the data  
 
 
 ```r
@@ -17,9 +17,9 @@ library(dplyr) ##for transforming and grouping data
 library(lattice) ##for plotting
 actdata <- read.csv("C:/Users/packee01/(C) My Documents/R/ReprodRes/activity.csv")  ##load data
 ```
-
-
-2.  Process/transform the data into a format suitable for your analysis  
+  
+  
+2. Process/transform the data into a format suitable for your analysis  
 
 ```r
 actdata$date <- ymd(actdata$date)  ##class conversion to POSIXct
@@ -42,7 +42,7 @@ legend("topright", lty = 1, col = "blue", legend = "Mean")
 ```
 
 ![](PA1_template_files/figure-html/unnamed-chunk-3-1.png) 
-
+  
 2.  Calculate and report the mean and median total number of steps taken per day  
 
 
